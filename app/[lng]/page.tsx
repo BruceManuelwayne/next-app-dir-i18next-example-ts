@@ -22,7 +22,7 @@ export default async function Page({ params: { lng } }: {
             Welcome to Next.js v13 <small>appDir</small> and i18next
           </Trans>
         </h2>
-        <div style={{ width: '100%' }}>
+        <div className=''>
           <p>
             <Trans t={t} i18nKey="blog.text">
               Check out the corresponding <a href={t('blog.link')}>blog post</a> describing this example.
@@ -46,7 +46,7 @@ export default async function Page({ params: { lng } }: {
           </Link>
         </div>
       </main>
-      <Footer lng={lng}/>
+      {/* <Footer lng={lng}/> */}
     </>
   )
 }
